@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="utf-8" />
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <title>Musse's Contact Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>    
+<header>
+   <h1>Musse Musse</h1>
+    <nav id="main-menu">
+        <ul class="nav-links">
+            <li><a class="nav-link" href="index.html">Home</a></li>
+            <li><a class="nav-link" href="about.html">About</a></li>
+            <li><a class="nav-link" href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>    
+
+<section id="contact">
+    <div class="container">
+        <h2 class="section-header">Get in Touch</h2>
+        <p>Feel free to reach out to me using the form below or via my contact details!</p>
+        
+        <form action="action_page.php" class="form-horizontal">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Enter your first name..." required>
+
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Enter your last name..." required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" name="message" placeholder="Write your message here..." rows="5" required></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+
+        <div class="direct-contact-container">
+            <h3>Contact Information</h3>
+            <ul class="contact-list">
+                <li class="list-item">
+                    <i class="fa fa-map-marker fa-2x"></i>
+                    <span class="contact-text place">P.O. Box 5678, London, UK</span>
+                </li>
+                <li class="list-item">
+                    <i class="fa fa-phone fa-2x"></i>
+                    <span class="contact-text phone"><a href="tel:+442071234567" title="Call Musse">+44 20 7123 4567</a></span>
+                </li>
+                <li class="list-item">
+                    <i class="fa fa-envelope fa-2x"></i>
+                    <span class="contact-text gmail"><a href="mailto:musse.m.100@gmail.com" title="Send me an email">musse.m.100@gmail.com</a></span>
+                </li>
+            </ul>
+
+            <h3>Follow Me</h3>
+            <ul class="social-media-list">
+                <li><a href="https://github.com/musse122" target="_blank" class="fa fa-github"></a></li>
+                <li><a href="#" target="_blank" class="fa fa-linkedin"></a></li>
+                <li><a href="#" target="_blank" class="fa fa-twitter"></a></li>
+                <li><a href="#" target="_blank" class="fa fa-instagram"></a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p style="text-align:center; padding:20px; background-color: #292929; color: white;">&copy; 2025 Musse Musse Portfolio. All Rights Reserved.</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,435 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background: url('https://amymhaddad.s3.amazonaws.com/morocco-blue.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Arial', sans-serif;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #292929;
+  color: white;
+  padding: 10px 20px;
+  height: 10vh;
+  width: 90%;
+  margin: auto;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-link {
+  color: white;
+  font-size: 1.8rem;
+  text-decoration: none;
+  margin: 0 15px;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #f39c12;
+}
+
+.title-box {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  padding: 50px;
+  margin: 15% auto auto;
+  width: 90%;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 3.5rem;
+  font-weight: 500;
+}
+
+h3 {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+p,
+p1 {
+  font-size: 1.3rem;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+}
+
+#header-div {
+  margin-top: 10px;
+  font-size: 40px;
+}
+
+#header-paragraph {
+  padding: 20px 50px;
+  background: rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+}
+
+#contact {
+  width: 90%;
+  margin: auto;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.section-header {
+  font-size: 3rem;
+  letter-spacing: 2px;
+  margin: 50px auto 25px;
+}
+
+.contact-wrapper {
+  margin: auto;
+  max-width: 800px;
+}
+
+.form-horizontal {
+  float: left;
+  max-width: 300px;
+}
+
+.form-control,
+textarea {
+  max-width: 100%;
+  margin-bottom: 10px;
+  color: white;
+  background-color: transparent;
+  border-color: white;
+}
+
+textarea {
+  height: 100px;
+}
+
+.send-button,
+.btn {
+  width: 250px;
+  height: 40px;
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  margin-top: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.send-button:hover,
+.btn:hover {
+  background-color: white;
+  color: #292929;
+}
+
+.direct-contact-container {
+  float: right;
+  max-width: 300px;
+}
+
+.contact-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.list-item {
+  line-height: 2;
+}
+
+.contact-text a {
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.contact-text a:hover {
+  color: #f39c12;
+}
+
+.social-media-list {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.social-media-list li {
+  display: inline-block;
+  margin: 10px;
+  height: 60px;
+  width: 60px;
+  line-height: 60px;
+  border-radius: 50%;
+  background-color: transparent;
+  border: 1px solid white;
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-media-list li:hover {
+  transform: scale(1.1);
+}
+
+.SkillBar {
+  width: 90%;
+  margin: 20px auto;
+  height: 50px;
+  background-color: rgba(17, 17, 17, 0.3);
+  position: relative;
+}
+
+#Skill-HTML {
+  width: 100%;
+  height: 50px;
+  background-color: #ea8564;
+  animation: Animate-Skill 2s;
+}
+
+#Skill-CSS {
+  width: 90%;
+  height: 50px;
+  background-color: #55a69f;
+  animation: Animate-Skill 2s;
+}
+
+#Skill-JS {
+  width: 95%;
+  height: 50px;
+  background-color: #c44e45;
+  animation: Animate-Skill 2s;
+}
+
+#Skill-JAVA {
+  width: 82%;
+  height: 50px;
+  background-color: #8e930c;
+  animation: Animate-Skill 2s;
+}
+
+@keyframes Animate-Skill {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.accordion_slider {
+  width: 90%;
+  margin: 30px auto;
+  overflow: hidden;
+}
+
+.accordion_slider ul {
+  display: flex;
+  list-style: none;
+}
+
+.accordion_slider li {
+  width: 250px;
+  height: 300px;
+  border-left: 0px solid #888;
+  transition: width 0.5s;
+  overflow: hidden;
+}
+
+.accordion_slider ul:hover li {
+  width: 200px;
+}
+
+.accordion_slider ul li:hover {
+  width: 400px;
+}
+
+.accordion_slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image_box {
+  background: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 10px;
+  text-align: left;
+}
+
+.image_box p {
+  font-size: 1.5rem;
+}
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+  .nav-links {
+    font-size: 1rem;
+  }
+
+  .accordion_slider li {
+    width: 50px;
+  }
+
+  .accordion_slider img {
+    height: 200px;
+  }
+
+  .social-media-list li {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+@media screen and (max-width: 830px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+  }
+
+  .direct-contact-container,
+  .form-horizontal {
+    float: none;
+    margin: auto;
+  }
+
+  .social-media-list li {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .send-button {
+    width: 100%;
+  }
+
+  h1,
+  h2,
+  h3 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+}
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh; /* Makes the form fill 80% of the screen vertically */
+  padding: 40px 0;
+  background-color: #070606; /* Light background for better contrast */
+}
+form {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px; /* Keeps the form from becoming too wide */
+}
+
+form input, form textarea, form select {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form input[type="submit"] {
+  background-color: #292929;
+  color: rgb(3, 3, 3);
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+form input[type="submit"]:hover {
+  background-color: #f39c12; /* Adds hover effect for button */
+}
+
+.direct-contact-container {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.contact-list {
+  padding: 0;
+  list-style: none;
+}
+
+.list-item {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.contact-text a {
+  text-decoration: none;
+  color: #292929;
+}
+
+.contact-text a:hover {
+  color: #f39c12;
+}
+
+.social-media-list {
+  margin-top: 20px;
+}
+
+.social-media-list li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.social-media-list a {
+  font-size: 2rem;
+  color: #292929;
+}
+
+.social-media-list a:hover {
+  color: #f39c12;
+}
+@media screen and (max-width: 768px) {
+  #contact {
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .direct-contact-container {
+    margin-top: 30px;
+  }
+}
